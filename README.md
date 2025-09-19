@@ -1,6 +1,5 @@
 # Quizlett - Advanced MCQ Quiz Application
 
-![Quizlett Logo](public/placeholder-logo.png)
 
 A modern, interactive multiple-choice quiz application built with Next.js, featuring three comprehensive quiz sections: Mathematics, Programming, and General Knowledge. Test your knowledge with instant feedback, progress tracking, achievements, and a beautiful dark/light theme interface.
 
