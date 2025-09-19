@@ -25,3 +25,24 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Ignore system files
+desktop.ini
+Thumbs.db
+*.jfif
+
+# Ignore installers and executables
+*.exe
+*.msi
+*.zip
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore CSV or other local data
+*.csv
+
+# Ignore build and dist folders
+dist/
+build/
