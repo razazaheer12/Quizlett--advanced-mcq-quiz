@@ -2,7 +2,7 @@
 
 A modern, interactive multiple-choice quiz application built with Next.js, featuring three comprehensive quiz sections: Mathematics, Programming, and General Knowledge. Test your knowledge with instant feedback, progress tracking, achievements, and a beautiful dark/light theme interface.
 
-<img width="918" height="420" alt="image" src="https://github.com/user-attachments/assets/dbaaf621-cb4e-41f0-b8e9-079ad9549431" />
+<img width="1536" height="672" alt="Gemini_Generated_Image_uimsu8uimsu8uims" src="https://github.com/user-attachments/assets/235459d9-b2cd-4c3d-b11b-e2136edd1ae7" />
 
 ## 🌟 Features
 
