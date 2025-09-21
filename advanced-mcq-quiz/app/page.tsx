@@ -446,6 +446,20 @@ function QuizAppContent() {
     saveProgress()
   }, [currentMathQuestion, programmingAnswers, gkAnswers, results, totalScore, earnedAchievements])
 
+  // Check achievements whenever results change
+  useEffect(() => {
+    if (results.length > 0) {
+      checkAchievements()
+    }
+  }, [results])
+
+  // Check achievements when viewing summary
+  useEffect(() => {
+    if (currentView === "summary") {
+      checkAchievements()
+    }
+  }, [currentView])
+
   const handleMathAnswer = (selectedAnswer: number) => {
     const question = quizData.mathematics[currentMathQuestion]
     const isCorrect = selectedAnswer === question.correctAnswer
@@ -570,8 +584,13 @@ function QuizAppContent() {
       }
     })
 
-    // Check quiz master (all sections completed)
-    if (results.length === 3 && !newEarnedAchievements.includes("quiz_master")) {
+    // Check quiz master (all sections completed) - Fixed: Check if all sections are completed
+    const allSectionsCompleted = results.length === 3 &&
+      results.some(r => r.section === "mathematics") &&
+      results.some(r => r.section === "programming") &&
+      results.some(r => r.section === "generalKnowledge")
+
+    if (allSectionsCompleted && !newEarnedAchievements.includes("quiz_master")) {
       newEarnedAchievements.push("quiz_master")
     }
 
